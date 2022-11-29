@@ -1,4 +1,8 @@
-import { createStitches } from '@stitches/react'
+import { createStitches, defaultThemeMap } from '@stitches/react'
+import { colors } from './tokens/colors'
+import { fontSizes } from './tokens/font-sizes'
+import { lineHeights } from './tokens/lineHeights'
+import { space } from './tokens/space'
 
 export const {
   config,
@@ -10,12 +14,15 @@ export const {
   theme,
   createTheme,
 } = createStitches({
+  themeMap: {
+    ...defaultThemeMap,
+    height: 'space',
+    width: 'space',
+  },
   theme: {
-    colors: {
-      alexcardosomadeira: '#ff0077',
-      alexcardosomadeira2: '#ff0077',
-      alexcardosomadeiraw: '#ff0077',
-      alexcardosomadeirae: '#ff0077',
-    },
+    colors,
+    fontSizes,
+    lineHeights,
+    space,
   },
 })

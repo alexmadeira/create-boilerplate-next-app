@@ -8,12 +8,13 @@ export const globalStyles = globalCss({
   },
   body: {
     '-webkit-font-smootgng': 'antialiased',
-    background: '$alexcardosomadeira',
-    color: 'Aqua',
+    background: '$gray900',
+    color: '$white',
     fontFamily: 'Roboto',
   },
   'body, input, textarea, button': {
     fontFamily: 'Roboto',
     fontWeight: 400,
+    fontSize: '$text',
   },
 })
