@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+const loading = require('./loading')
+const coneFile = require('./coneFile')
+'use strict'
+
+const fs = require('fs')
+const path = require('path')
+const card = fs.readFileSync(path.join(__dirname, 'card'), 'utf8')
+const starcommands = fs.readFileSync(path.join(__dirname, 'starcommands'), 'utf8')
+
+console.log(card)
+
+function callback(){
+  console.log(starcommands)
+}
+async function init(){
+  coneFile()
+  await loading('Montando Pacote',20, callback)
+}
+
+
+loading('Verificando Pacote',30, init)
