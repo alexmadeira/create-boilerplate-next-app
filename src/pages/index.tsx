@@ -1,5 +1,4 @@
 import Image from 'next/image'
-
 import {
   Container,
   Header,
@@ -24,14 +23,12 @@ import envelope from '../assets/img/icons/envelope.png'
 import githubLogo from '../assets/img/icons/githubLogo.png'
 import linkedinLogo from '../assets/img/icons/linkedinLogo.png'
 import desktop from '../assets/img/icons/desktop.png'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Alex Madeira | NextJs Boilerplate</title>
-      </Head>
+      <NextSeo description="A short description goes here." />
       <Container>
         <Header>
           <h1>Alex Madeira</h1>
