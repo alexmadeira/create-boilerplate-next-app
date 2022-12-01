@@ -1,6 +1,6 @@
 {
   "name": "create-boilerplate-next-app",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Criação e configuração inicial do nextjs junto com algumas outras bibliotecas",
   "main": "/bin/index.js",
   "bin": {
@@ -32,7 +32,6 @@
   "license": "MIT",
   "files": [
     "bin/card",
-    "bin/starcommands",
     "bin/coneFile.js",
     "bin/index.js",
     "bin/loading.js"

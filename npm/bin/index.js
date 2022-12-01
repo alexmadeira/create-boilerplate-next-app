@@ -14,5 +14,4 @@ async function init(){
   coneFile()
 }
 
-
 loading('Verificando Pacote',30, init)
