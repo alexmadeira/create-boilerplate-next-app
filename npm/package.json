@@ -1,6 +1,6 @@
 {
   "name": "create-boilerplate-next-app",
-  "version": "0.0.4",
+  "version": "1.0.1",
   "description": "Criação e configuração inicial do nextjs junto com algumas outras bibliotecas",
   "main": "/bin/index.js",
   "bin": {

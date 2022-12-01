@@ -13,7 +13,7 @@ const options = {
   borderStyle: 'round'
 }
 
-const repoName = process.argv[2]
+
 
 const cardData = {
   name: chalk.white('           Alex Madeira'),
@@ -35,26 +35,6 @@ const cardData = {
   labelCard: chalk.white.bold('      Card:')
 }
 
-
-const startCommandsData = {
-  successMsg: chalk.green(`Parabéns! ${repoName} foi criado em ${__dirname}/${repoName}\nDentro desse diretório, você pode executar vários comandos:`),
-  dev: chalk.cyan('   npm run dev'),
-  devDescription: chalk.white('     Executa o next dev para iniciar o Next.js no modo de desenvolvimento'),
-
-  build: chalk.cyan('   npm run build'),
-  buildDescription: chalk.white('     Executa a next build para criar o aplicativo para uso em produção'),
-
-  start: chalk.cyan('   npm run start'),
-  startDescription: chalk.white('     Executa next start para iniciar um servidor de produção Next.js'),
-
-  lint: chalk.cyan('    npm run lint'),
-  lintMsg: chalk.white('      Executa o next lint para definir a configuração ESLint integrada do Next.js'),
-
-  suggestionMsg: chalk.white('Sugiro que você comece digitando:'),
-  suggestionCommand: `${chalk.cyan('    cd')} ${repoName} \n${chalk.cyan('   npm run dev')}`,
-
-  footer:'👍🏾'
-}
 
 const newline = '\n'
 
@@ -78,24 +58,5 @@ const card = heading + // data.name + data.handle
   webing + newline + newline + // data.labelWeb + data.web
   carding // data.labelCard + data.npx
 
-  const starcommands = startCommandsData.successMsg + newline + newline +
-                      startCommandsData.dev + newline+
-                      startCommandsData.devDescription + newline + newline +
-
-                      startCommandsData.build + newline +
-                      startCommandsData.buildDescription + newline + newline +
-
-                      startCommandsData.start + newline +
-                      startCommandsData.startDescription + newline + newline +
-
-                      startCommandsData.lint + newline +
-                      startCommandsData.lintMsg + newline + newline + newline + newline +
-
-                      startCommandsData.suggestionMsg + newline + newline +
-                      startCommandsData.suggestionCommand + newline + newline +
-
-                      startCommandsData.footer;
-
-
 fs.writeFileSync(path.join(__dirname, 'bin/card'), chalk.green(boxen(card, options)))
-fs.writeFileSync(path.join(__dirname, 'bin/starcommands'), starcommands)
+
